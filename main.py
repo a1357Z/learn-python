@@ -61,6 +61,48 @@ def print_hi(name):
     #changing values at some index
     # people[4] = "brumma"
 
+    #list functions
+    friends = ["ajay", "ankit", "himanshu", "banra", "ajay"]
+    moreFriends = ["ashish", "deepak"]
+
+    #add the second list to the first list
+    # friends.extend(moreFriends)
+    # print(friends)
+
+    #add an item to the end of the list
+    # friends.append("chopra")
+    # print(friends)
+
+    #add an item at a position in the list
+    # friends.insert(0,"malik")
+    # print(friends)
+
+    #remove an item from a list
+    # friends.remove("ajay")
+    # print(friends)
+
+    #remove the last item from the list
+    # friends.pop()  #think of it like a stack
+    # print(friends)
+
+    #check if an item exists in the list by getting its index
+    # print(friends.index("ajay"))
+    # print(friends.index("demon")) #this will give error as element not in the list
+
+    #get the occurences of an element in the list
+    # print(friends.count("ajay"))
+
+    #sorting the list
+    # friends.sort()
+    # print(friends)
+
+    #reversing the list
+    # friends.reverse()
+    # print(friends)
+
+    #create a copy of a list
+    friends2 = friends.copy();
+    print(friends2)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':

@@ -133,25 +133,57 @@ def print_hi(name):
     # myObject["school"] = "ira"
 
     # 2d lists
-    number_grid = [
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9],
-        0,
-        ["ajay"]
-    ]
+    # number_grid = [
+    #     [1, 2, 3],
+    #     [4, 5, 6],
+    #     [7, 8, 9],
+    #     0,
+    #     ["ajay"]
+    # ]
 
     # for item in number_grid:
     #     print(item)
     # print(number_grid[0][1])
 
     # nested for loop
-    for item in number_grid:
-        if type(item) == list:
-            for val in item:
-                print(val)
-        else:
-            print(item)
+    # for item in number_grid:
+    #     if type(item) == list:
+    #         for val in item:
+    #             print(val)
+    #     else:
+    #         print(item)
+
+    # error handling ( try, except )
+    # try:
+    #     val = 100 / 0  # the code breaks at this lint itself and goes into the except block
+    #     num = int(input("enter a number"))
+    #     print(num)
+    # except ZeroDivisionError as err:
+    #     print(err)
+    # except ValueError:
+    #     print("invalid input!! input must be a number")
+
+    # reading a file in python
+
+    # dataFile = open('./data.txt', 'r')
+    # print(dataFile.readable())  # check if the file can be read
+    # print(dataFile.readline())
+    # for line in dataFile.readlines():
+    #     print(line)
+    # print(dataFile.read())
+    # dataFile.close()
+
+    # appending to a file
+    # dataFile = open('data.txt', 'a')
+    # dataFile.write("\nnext line")
+
+    # writing to a file
+    # dataFile = open('data.txt', 'w')
+    # dataFile.write("\nA brand new file with new content.")
+
+    # creating a file and writing to it
+    dataFile = open('data1.txt', 'a')
+    dataFile.write("\na new file created and content written on it.")
 
 
 # creating a new function, note that function cannot be empty else we will get indentation error

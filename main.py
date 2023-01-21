@@ -4,6 +4,8 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 from math import *
 
+# import Student
+from Student import Student
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -182,8 +184,13 @@ def print_hi(name):
     # dataFile.write("\nA brand new file with new content.")
 
     # creating a file and writing to it
-    dataFile = open('data1.txt', 'a')
-    dataFile.write("\na new file created and content written on it.")
+    # dataFile = open('data1.txt', 'a')
+    # dataFile.write("\na new file created and content written on it.")
+
+    # classes in python
+    st = Student('ajay', "me", 9, False)
+    print(st.name)
+    print(st.on_honor_roll());
 
 
 # creating a new function, note that function cannot be empty else we will get indentation error
